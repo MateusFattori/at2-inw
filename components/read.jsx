@@ -76,18 +76,6 @@ const bt_alterar = (id)=>{
   })
 }
 
-const descarte = ()=>{
-  addDoc(descartados,
-    { nome:nome,
-      validade:validade
-    }
-    ).then(()=>{
-      setNome('')
-      setValidade('')
-      window.location.reload()
-    })
-}
-
 // Rotina de Update fim
 
   return (
