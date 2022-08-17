@@ -64,7 +64,7 @@ const bt_cancelar = ()=>{
 }
 
 const bt_alterar = (id)=>{
-  const alimentosShow = doc(database,"alimentos",id)
+  const alimentosShow = doc(database,'alimentos',id)
   updateDoc(alimentosShow,{
     nome: nome, validade:validade
   }).then(()=>{
@@ -75,6 +75,20 @@ const bt_alterar = (id)=>{
     setMostrar(false)
   })
 }
+
+
+/*const btn_descartar = (id)=>{
+  const descartadosShow = doc(database, "descartados", id)
+  updateDoc(descartadosShow,{
+    nome: nome, validade
+  }).then(()=>{
+    setNome(null)
+    setValidade(null)
+    setID(null)
+    read()
+    setMostrar(false)
+  })
+}*/
 
 // Rotina de Update fim
 
@@ -105,7 +119,7 @@ const bt_alterar = (id)=>{
                 <div className="input-group">
                 <input type="button" className='btn-outline-warning form-control' value="Alterar" onClick={()=>show(lista.id)} />
                 <input type="button" className='btn-outline-danger form-control' value="Excluir" onClick={()=>deleteBtn(lista.id)} />
-                {/*<input type="submit" value="DESCARTAR" onClick={descarte} className='form-control btn btn-outline-dark' />*/}
+                <input type="submit" value="DESCARTAR" onClick={()=>bt_alterar(contatoUnico.id)} className='form-control btn btn-outline-dark' />
              
               </div>
               </div>
@@ -116,4 +130,11 @@ const bt_alterar = (id)=>{
       </div>   
     </>
   )
+}
+
+function Descartar(props){
+
+  const [nome,setNome] = useState("")
+  const [validade,setValidade] = useState("")
+
 }

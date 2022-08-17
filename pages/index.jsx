@@ -15,7 +15,7 @@ export default function Home() {
        <main className="container">
         <div className="row">
 
-        <a href="/descarte"><button className='descatados'>Ver produtos</button></a>
+        <a href="/descarte"><button className='descatados'>Ver Descartados</button></a>
           
           <div className="col-lg">
             <Create/>
