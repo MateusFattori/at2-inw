@@ -26,10 +26,14 @@ export default function Create() {
 
     return (
       <>
-        <h3 className='text-center'>CADASTRAR</h3>
-            <input type="text" name="nome" placeholder='Produto' className='form-control' id="" required onChange={event=>setNome(event.target.value)} value={nome} />
-            <input type="date" name="validade" id="" required onChange={event=>setValidade(event.target.value)} value={validade} />
-        <input type="submit" value="SALVAR" onClick={cadastrar} className='form-control btn btn-outline-dark' />
+        <div class="cadOut">
+          <div class="cadIn">
+            <h3 className='text-center cadTitle'>CADASTRAR</h3>
+              <input type="text" name="nome" placeholder='Produto' className='form-control' id="" required onChange={event=>setNome(event.target.value)} value={nome} />
+             <input type="date" name="validade" id="" class="cadDate" required onChange={event=>setValidade(event.target.value)} value={validade} />
+            <input type="submit" value="SALVAR" onClick={cadastrar} className='form-control btn btn-outline-dark' />
+          </div>  
+        </div>  
       </>
     )
   }

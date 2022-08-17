@@ -91,25 +91,29 @@ const bt_alterar = (id)=>{
     ):(
       <></>
     )}
-        <h3 className='text-center'>GRAVADOS</h3>
-        {alimentosLista.map((lista)=>{
-          return(
-            <div className='card'>
-              <div className="card-header bg-dark text-light">{lista.nome}</div>
-              <div className='card-body'>
-              <p className='card-subtitle'>{lista.validade}</p>
-              </div>
-              <div className='card-footer text-center'>
-              <div className="input-group">
-              <input type="button" className='btn-outline-warning form-control' value="Alterar" onClick={()=>show(lista.id)} />
-              <input type="button" className='btn-outline-danger form-control' value="Excluir" onClick={()=>deleteBtn(lista.id)} />
-              <input type="submit" value="DESCARTAR" onClick={descarte} className='form-control btn btn-outline-dark' />
-              
+      <div class="gravOut">
+        <div class="gravIn">
+          <h3 className='text-center gravTitle'>GRAVADOS</h3>
+          {alimentosLista.map((lista)=>{
+            return(
+              <div className='card'>
+                <div className="card-header bg-dark text-light">{lista.nome}</div>
+                <div className='card-body gravBody'>
+                <p className='card-subtitle gravBody'>{lista.validade}</p>
+                </div>
+                <div className='card-footer text-center gravButao'>
+                <div className="input-group">
+                <input type="button" className='btn-outline-warning form-control' value="Alterar" onClick={()=>show(lista.id)} />
+                <input type="button" className='btn-outline-danger form-control' value="Excluir" onClick={()=>deleteBtn(lista.id)} />
+                {/*<input type="submit" value="DESCARTAR" onClick={descarte} className='form-control btn btn-outline-dark' />*/}
+             
               </div>
               </div>
             </div>
           )
         })}
+        </div>
+      </div>   
     </>
   )
 }

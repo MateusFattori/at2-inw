@@ -1,0 +1,74 @@
+.background{
+    height: 913px;
+    background-image: linear-gradient(to bottom right, rgb(0, 247, 255), rgb(0, 64, 107));
+}
+
+.titulo{
+    text-align: center;
+}
+
+.cadOut{
+    background-color: #ffff;
+    margin-top: 5%;
+    border: solid 3px black ;
+    border-radius: 5px;
+    width: 490px;
+    height: 185px;
+}
+
+.cadTitle{
+    background-color: #ffff;
+}
+
+.cadIn{
+    background-color: #ffff;
+    margin-left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.cadDate{
+    background-color: #ffff;
+}
+
+.gravOut{
+    background-color: #ffff;
+    margin-top: 5%;
+    border: solid 3px black ;
+    border-radius: 5px;
+    width: 500px;
+    height: auto;
+}
+
+.gravTitle{
+    background-color: #ffff;
+}
+
+.gravIn{
+    background-color: #ffff;
+    margin-left: 3%;
+    width: 95%;
+    height: 90%;
+}
+
+.gravBody{
+    background-color: #ffff;
+}
+
+.gravButao{
+    margin-bottom: 3%;
+}
+
+.descatados{
+    border: solid 2px #0c0c0c;
+    border-radius: 8px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: large;
+    color: rgb(243, 243, 243);
+    background-color: #009c2f;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 15%;
+    height: 50px;
+}
